@@ -13,6 +13,9 @@ import World from './World';
 class Header extends Component {
     constructor(prpos){
         super();
+      this.state={}
+
+
 }
     render() {
         return (

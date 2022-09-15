@@ -2,26 +2,46 @@
 import './App.css';
 import {React,Component} from 'react';
 import{ Routes,Route,Link} from 'react-router-dom'
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav,Card,Button} from 'react-bootstrap';
 import India from './India';
 import Header from './Header';
 import State from './State';
 import World from './World';
 
 
-function App() {
+function App(props) {
+  const bigNumbers = [100, 200, 300, 400, 500];
+  let smallNumbers;  
+
   return (
-    
-    <div className='container-fluid'>
-
-      <Header/>
       
+    <>
+    <Header/>
+    <div>{
+    
 
+    // Create the smallNumbers array below
+   smallNumbers=bigNumbers.map((num,key) =>{
 
     
-  
-    </div>
- 
+    
+    
+    return <span>{num/10}</span>})
+    
+
+    
+       
+    
+        }
+        <h1>this is the arrayyasdiurgouq {smallNumbers}</h1>
+        <h4>{bigNumbers}</h4>
+      
+      
+      
+       
+        </div>
+    
+    </>
 
 
  
